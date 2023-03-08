@@ -8616,6 +8616,12 @@ const burger = () => {
       bodyScrollLock_esm_enableBodyScroll(targetElement);
     }
   });
+  const appHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`);
+  };
+  window.addEventListener('resize', appHeight);
+  appHeight();
 };
 /* harmony default export */ const components_burger = (burger);
 // EXTERNAL MODULE: ./node_modules/choices.js/public/assets/scripts/choices.js
