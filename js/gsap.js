@@ -9187,7 +9187,8 @@ document.addEventListener('DOMContentLoaded', () => {
       scrollTrigger: {
         trigger: '.advantages',
         start: 'top center',
-        end: '+=300px'
+        end: '+=300px',
+        markers: false
       },
       scale: 0,
       transformOrigin: 'bottom right',
@@ -9198,7 +9199,9 @@ document.addEventListener('DOMContentLoaded', () => {
         trigger: '.advantages__wrapper',
         start: 'top center',
         end: '+=500px'
+        // markers : true,
       },
+
       scale: 0,
       stagger: 1,
       duration: 1,
